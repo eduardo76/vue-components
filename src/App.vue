@@ -12,6 +12,8 @@
 
         <zCampoTexto v-model="texto"></zCampoTexto>
         {{ texto }}
+
+        <zCounter></zCounter>
     </nav>
 
   </div>

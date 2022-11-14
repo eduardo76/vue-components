@@ -1,6 +1,6 @@
 {
-  "name": "teste-do-plugin-npm",
-  "version": "0.1.0",
+  "name": "vue-components",
+  "version": "0.1.1",
   "main" : "src/index.js",
   "private": true,
   "scripts": {

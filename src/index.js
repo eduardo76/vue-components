@@ -1,10 +1,12 @@
 import zCampoTexto from "./components/zCampoTexto.vue";
+import zCounter from "./components/zCounter.vue";
 
 const zComponentes = {
  install(Vue, options) {
   // Let's register our component globally
   // https://vuejs.org/v2/guide/components-registration.html
   Vue.component("zCampoTexto", zCampoTexto);
+  Vue.component("zCounter", zCounter);
  }
 };
 
