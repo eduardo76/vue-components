@@ -1,10 +1,19 @@
+<script setup>
+    import { ref } from "vue";
+    // import zCampoTexto from './components/zCampoTexto.vue';
+
+    const texto = ref("Texto inicial")
+</script>
+
 <template>
   <div id="app">
+    <h1>Trabalhando com componentes vue</h1>
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+
+        <zCampoTexto v-model="texto"></zCampoTexto>
+        {{ texto }}
     </nav>
-    <router-view/>
+
   </div>
 </template>
 
@@ -19,6 +28,9 @@
 
 nav {
   padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav a {
@@ -29,4 +41,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
